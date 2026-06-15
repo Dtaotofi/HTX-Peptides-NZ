@@ -497,6 +497,8 @@ if (issue) {
 }
 
 const selectedShipping = SHIPPING_OPTIONS[form.shipping] || SHIPPING_OPTIONS.standard;
+const ship = shippingCost(subtotal, form.shipping);
+const total = subtotal + ship;
 
   if (!items.length) {
     summary.innerHTML = '<p class="muted">Your cart is empty.</p><a class="btn wide" href="shop.html">Return to Shop</a>';
@@ -515,7 +517,7 @@ const selectedShipping = SHIPPING_OPTIONS[form.shipping] || SHIPPING_OPTIONS.sta
     </div>
     <div class="checkout-totals">
       <div><span>Subtotal</span><b>${money(subtotal)}</b></div>
-      <div><span>${subtotal >= 300 ? 'Free Shipping' : option.label}</span><b>${ship === 0 ? '$0.00 NZD' : money(ship)}</b></div>
+      <div><span>${subtotal >= 300 ? 'Free Shipping' : selectedShipping.label}</span><b>${ship === 0 ? '$0.00 NZD' : money(ship)}</b></div>
       <div class="checkout-total"><span>Total</span><b>${money(total)}</b></div>
     </div>
   `;
