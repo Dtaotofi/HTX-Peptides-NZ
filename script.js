@@ -1,5 +1,5 @@
 const PRODUCTS = [
-  { id: 'retavaluebundle', name: 'Retatrutide Value Bundle', strength: '20mg Total + Recon Kit', price: 230, stock: 20, category: 'Metabolic Research', image: 'assets/Retatrutide value bundle.png', description: 'Value bundle supplied for research use only with complete recon kit included.', details: ['2 x Retatrutide 10mg vials', '10mL BAC Water', '3mL Luer Lock syringe', 'Drawing needle', '5 x 100IU insulin syringes', '10 x alcohol prep wipes'] },
+  { id: 'retavaluebundle', name: 'Retatrutide Value Bundle', strength: '20mg Total + Recon Kit', price: 10230, stock: 20, category: 'Metabolic Research', image: 'assets/Retatrutide value bundle.png', description: 'Value bundle supplied for research use only with complete recon kit included.', details: ['2 x Retatrutide 10mg vials', '10mL BAC Water', '3mL Luer Lock syringe', 'Drawing needle', '5 x 100IU insulin syringes', '10 x alcohol prep wipes'] },
   { id: 'reta10', name: 'Retatrutide', strength: '10mg', price: 120, stock: 20, category: 'Metabolic Research', image: 'assets/retatrutide-10mg.png' },
   { id: 'reta20', name: 'Retatrutide', strength: '20mg', price: 220, stock: 20, category: 'Metabolic Research', image: 'assets/retatrutide-20mg.png' },
   { id: 'mots10', name: 'MOTS-C', strength: '10mg', price: 100, stock: 10, category: 'Metabolic Research', image: 'assets/mots-c-10mg.png' },
